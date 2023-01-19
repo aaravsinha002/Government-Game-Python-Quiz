@@ -1,2 +1,1 @@
-import random, time, os, sys, pygame
-pygame.init()
+import random, time, os, sys

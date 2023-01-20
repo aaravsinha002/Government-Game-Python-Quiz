@@ -8,20 +8,23 @@ def t(t): #typewriter effect
     for l in t:
         sys.stdout.write(l)
         sys.stdout.flush()
-        time.sleep(0.1)
+        time.sleep(0.005)
     print('')
 
-def ask(q,a): 
-    if input(q) == a.lower():
+def ask(q,a,at=None): 
+    t(q)
+    r=input("")
+    if r == a.lower() or r == at.lower():
         t("Congrats! You got it correct")
     else:
         t("You suck! You got it wrong")
 
 '''
 syntax of ask()
-ask(q, a)
+ask(q, a, t)
 q: question
 a: answer from the user in lowercase
+t: optional parameter
 '''
 
 def end():
@@ -32,11 +35,12 @@ def end():
     
     
     
-    #start
-    t("Welcome to the government quiz made by Aarav, Sebastian, and Ian!")
-    t("This python program will ask you questions related to the government unit")
-    t("Topics are Bill of Rights, government terms, tax, and Texas public education")
-    tmp=input("Press enter to continue > ")
-    #start questions here
-    
+#start
+t("Welcome to the government quiz made by Aarav, Sebastian, and Ian!")
+t("This python program will ask you questions related to the government unit.")
+t("Topics are Bill of Rights, government terms, tax, Texas public education and much more!")
+tmp=input("Press enter to continue > ")
+#start questions here
+
+ask("Which amendment guarantees the freedom of speech, press, religion, and right to assembly? ", "1", "1st")
     

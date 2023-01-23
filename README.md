@@ -10,7 +10,7 @@ Python quiz based on government unit
 
 Sebastion Ponse for the questions
 
-Aarav Sinha for help with questions and code
+Aarav Sinha for help with questions and code(mostly)
 
 Ian Ko for typewriter effect and other details
 

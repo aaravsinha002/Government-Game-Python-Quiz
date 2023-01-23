@@ -17,7 +17,7 @@ def ask(q,a,at=None):
     if r == a.lower() or r == at.lower():
         t("Congrats! You got it correct")
     else:
-        t("You suck! You got it wrong")
+        t("You got it wrong")
 
 '''
 syntax of ask()

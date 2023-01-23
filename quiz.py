@@ -12,6 +12,8 @@ def t(t): #typewriter effect
     print('')
 
 def ask(q,a,at=None): 
+    clear = lambda: os.system('cls')
+    clear()
     t(q)
     r=input("")
     if r == a.lower() or r == at.lower():
@@ -43,4 +45,6 @@ tmp=input("Press enter to continue > ")
 #start questions here
 
 ask("Which amendment guarantees the freedom of speech, press, religion, and right to assembly? ", "1", "1st")
-    
+ask("Which amendment guarantees the right to bear arms (weapons)?", "2", "2nd")
+ask("Which amendment prevents soldiers to quarter on any private property without the owner's consent, even during war?", "3", "3rd")
+ask("Which amendment prevents governmental officials from seizing or searching private property and items without a probable reason?", "4", "4th")

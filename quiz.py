@@ -3,6 +3,8 @@
 Make ask function better to accept different answers
 End screen
 '''
+import pygame
+pygame.init()
 import random, time, os, sys
 def t(t): #typewriter effect
     for l in t:

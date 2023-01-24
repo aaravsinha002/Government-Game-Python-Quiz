@@ -5,6 +5,7 @@ End screen
 '''
 import pygame
 pygame.init()
+
 import random, time, os, sys
 def t(t): #typewriter effect
     for l in t:
@@ -35,6 +36,19 @@ def end():
     #make end screen when all questions are correct
     #maybe use gui pop up and show art or an image
     t("Congrats! You finished the entire quiz")
+    
+    import pygame  
+  
+    pygame.init()  
+    screen = pygame.display.set_mode((500,500))  
+    done = False  
+    pygame.display.set_mode('Congrats!You finished the Quiz!)
+
+    while not done:  
+        for event in pygame.event.get():  
+            if event.type == pygame.QUIT:  
+                done = True  
+        pygame.display.flip()  
     
     
     

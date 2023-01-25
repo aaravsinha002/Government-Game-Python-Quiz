@@ -6,6 +6,9 @@ End screen
 import pygame
 pygame.init()
 
+WHITE=(255,255,255)
+GREEN=(0,255,0)
+
 import random, time, os, sys
 def t(t): #typewriter effect
     for l in t:
@@ -43,11 +46,18 @@ def end():
     screen = pygame.display.set_mode((500,500))  
     done = False  
     pygame.display.set_mode('Congrats!You finished the Quiz!)
+    
+    font = pygame.font.SysFont(Arial,24)
+    txt=font.render('Game over: Your score was : '+str(score),True,GREEN)
+    
 
     while not done:  
         for event in pygame.event.get():  
             if event.type == pygame.QUIT:  
-                done = True  
+                done = True
+        screen.fill(WHITE)
+        screen.blit(txt, (20, 20))
+                            
         pygame.display.flip()  
     
     
